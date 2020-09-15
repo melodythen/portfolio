@@ -1,4 +1,4 @@
-# portfolio
+# Personal Portfolio
 
 
 My porfolio page showcasing my projects and achievements.
