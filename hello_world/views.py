@@ -1,6 +1,6 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
+from django.views.generic import View
 
-# Create your views here.
 
 def hello_world(request):
     return render(request, 'hello_world.html', {}) 
@@ -12,3 +12,5 @@ def test(request):
 
 def resume(request):
     return render(request,'resume.html',{})
+
+
