@@ -8,3 +8,7 @@ def hello_world(request):
 
 def test(request):
     return render(request,'test.html',{})
+
+
+def resume(request):
+    return render(request,'resume.html',{})

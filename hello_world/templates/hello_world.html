@@ -2,11 +2,26 @@
 
 {% block page_content %}
 <head>
-    <link rel="stylesheet" href="static/css/base.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="../static/css/base.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .fa {
+          padding: 20px;
+          font-size: 30px;
+          width: 50px;
+          text-align: center;
+          text-decoration: none;
+          margin: 5px 2px;
+        }
+        
+        .fa:hover {
+            opacity: 0.7;
+        }
     
+        </style>
 </head>
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
     <a class="navbar-brand" href="/">Melody's Portfolio Page</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -14,10 +29,21 @@
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
     <div class="navbar-nav">
         <a class="nav-link active" href="/projects">Projects <span class="sr-only">(current)</span></a>
-        <a class="nav-link" href="#">Resume</a>
+        <a class="nav-link" href="/resume">Resume</a>
         <a class="nav-link" href="/admin">Admin</a>
+        
     </div>
+
     </div>
+    <!--- social media/ contact buttons-->
+    <a href="https://www.linkedin.com/in/melody-then/" class="fa fa-linkedin" data-toggle="tooltip" data-placement="top" title="LinkedIn"></a>
+    <a href="https://www.facebook.com/mel.then" class="fa fa-facebook-square" data-toggle="tooltip" data-placement="top" title="Facebook"></a>
+    <a href="https://github.com/melodythen" class="fa fa-github-alt" data-toggle="tooltip" data-placement="top" title="Github"></a>
+    <a href="mailto: thenmelody@gmail.com" class="fa fa-envelope" data-toggle="tooltip" data-placement="top" title="E-Mail" ></a>
+
+
+     
+
 </nav>
 
 
@@ -27,15 +53,6 @@
     <hr class="my-4">
     <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
 
-  </div>
-  <div class="jumbotron jumbotron-fluid">
-    <div class="container">
-      <h1 class="display-4">Contact me</h1>
-      <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
-      <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
-      <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
-      <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
-    </div>
   </div>
 
   <div class="jumbotron">
@@ -51,7 +68,18 @@
     <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
     <hr class="my-4">
     <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-    <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+    <a class="btn btn-primary btn-lg" href="/resume" role="button">resume</a>
+  </div>
+
+
+  <div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <h1 class="display-4">Contact me</h1>
+      <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+      <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+      <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+      <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+    </div>
   </div>
 
 {% endblock %}

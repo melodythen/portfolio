@@ -1,0 +1,208 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="../static/css/base.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+
+    <!--Style for navbar-->
+    <style>
+      .fa {
+        padding: 20px;
+        font-size: 30px;
+        width: 50px;
+        text-align: center;
+        text-decoration: none;
+        margin: 5px 2px;
+      }
+        
+      .fa:hover {
+          opacity: 0.7;
+      }
+
+
+      .sidenav {
+        height: 100%;
+        width: 300px;
+        position: fixed;
+        z-index: 1;
+        top: auto;
+        left: 0;
+        background-color: rgb(202, 202, 202);
+        overflow-x: hidden;
+        padding-top: 20px;
+      }
+
+      .sidenav a {
+        padding: 30px 8px 6px 16px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #383838;
+        display: block;
+        text-align: center;
+      }
+
+      .sidenav a:hover {
+        color: #f1f1f1;
+      }
+      .sidenav img{
+ 
+        border-radius: 50%;
+        border: 5px solid rgb(153, 153, 153);
+
+      }
+      .sidenav img:hover{
+        opacity: 0.8
+      }
+      html {
+        scroll-behavior: smooth;
+      }
+
+      .main {
+        margin-left: 300px; /* Same as the width of the sidenav */
+        font-size: 28px; /* Increased text to enable scrolling */
+        padding: 0px 10px;
+        background-color: white;
+        
+        overflow-wrap: normal;
+      }
+
+      .about h1{
+        color: #a0a0a0;
+        font-size:175px;
+        padding-top: 200px;
+        
+      }
+
+      .education h2,h3 {
+        text-align: left;
+        padding-left: 60px;
+        color: #8a8a8a;
+      }
+      .main p{
+        text-align: left;
+        text-indent: 50px;
+        padding: 60px 60px;
+        color: #8a8a8a;
+       
+
+      }
+
+
+
+    </style>
+  </head>
+
+  
+  <body>
+
+    
+      <!-- nav bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+        <a class="navbar-brand" href="/">Melody's Portfolio Page</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+            <a class="nav-link" href="/projects">Projects</a>
+            <a class="nav-link" href="/resume">Resume</a>
+            <a class="nav-link" href="/admin">Admin</a>
+            
+        </div>
+        </div>
+        <!--- social media/ contact buttons-->
+        <a href="https://www.linkedin.com/in/melody-then/" class="fa fa-linkedin" data-toggle="tooltip" data-placement="top" title="LinkedIn"></a>
+        <a href="https://www.facebook.com/mel.then" class="fa fa-facebook-square" data-toggle="tooltip" data-placement="top" title="Facebook"></a>
+        <a href="https://github.com/melodythen" class="fa fa-github-alt" data-toggle="tooltip" data-placement="top" title="Github"></a>
+        <a href="mailto: thenmelody@gmail.com" class="fa fa-envelope" data-toggle="tooltip" data-placement="top" title="E-Mail" ></a>
+    </nav>
+    
+
+    <!--- side bar-->
+      <div class="sidenav">
+        <a href="#about">
+          <img class = "profile", src= '../static/profile.png' alt='profile' style="width:250px; height:250px"  >
+        </a>
+        <a href="#about">About</a>
+        <a href="#education">Education</a>
+        <a href="#skills">Skills</a>
+        <a href="#interests">Interests</a>
+        <a href="#contact">Contact</a>
+      </div>
+      
+    
+
+
+
+      <!-- Main body-->
+      <div class='main'>
+        <div class="about" id="about">
+          <div class="typewriter">
+            <h1>Melody <b>Then</b></h1>
+          </div>
+          <h3>Montreal, Quebec · thenmelody@gmail.com </h3>
+          <br><br>
+          <h2>About Me</h2>
+
+        <div style="margin-top: 40px;" class="shadow-lg p-3 mb-5 bg-white rounded">
+          <p>I recently graduated from McGill University with a double major in computer science and economics. These concentrations have allowed me to grow my interests in both technology and analytics. My passion lies in software development and data science, in which I demonstrate through academic and personal projects. I am currently refining my skills in data science by enhancing my python and analytical skills. As well, I am working on personal projects relating to technologies I encounter, such as automation and varying web frameworks and databases.</p>
+        </div>
+        <br><br>
+          </div>
+        <hr>
+        
+        <br><br>
+        <div class="education topBar" data-aos="fade-up" id="education">
+          <h1>Education </h1>
+          <div style="margin-top: 40px;" class="shadow-lg p-3 mb-5 bg-white rounded row no-gutters">
+              <div class=".col-md-6">
+                <h2>McGill University   <span style="color: rgb(153, 153, 153);"><i>· Bachelor of Arts (B.A)</i></span> <h2>
+                
+                <h3 style="text-indent: 40px;"> COMPUTER SCIENCE & ECONOMICS</h3>
+                <h3 style="text-indent: 40px;">(In-Major GPA) Computer Science: 3.4/4.0 · Economics: 3.86/4.0</h3>
+                <h3>Graduated May 2020</h3>
+              </div>
+              <div class="col">
+                <h2 style="text-align: right;" >Graduated May, 2020</h2>
+              </div>
+          </div>
+        </div>
+        <br><br>
+        <hr>
+
+        <div class="skills">
+          <h1>Skills</h1>
+          <p>test</p>
+        </div>
+
+        <hr>
+
+        <div class="interests">
+          <h1>Interests</h1>
+          <p>test</p>
+        </div>
+
+        <hr>
+
+        <div class="contact">
+          <h1>Contact</h1>
+          <p>test</p>
+        </div>
+
+        <hr>
+      
+      
+      </div>
+
+      <script>
+        AOS.init();
+      </script>
+
+  </body>
+
+  </html>
