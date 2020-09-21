@@ -13,6 +13,8 @@
           text-align: center;
           text-decoration: none;
           margin: 5px 2px;
+          color: black;
+
         }
         
         .fa:hover {
@@ -32,7 +34,7 @@
             <div class="navbar-nav">
                 <a class="nav-link active" href="/projects">Projects <span class="sr-only">(current)</span></a>
                 <a class="nav-link" href="/resume">Resume</a>
-                <a class="nav-link" href="/admin">Admin</a>
+               <!-- <a class="nav-link" href="/admin">Admin</a>-->
                 
             </div>
             </div>
@@ -46,7 +48,7 @@
 
 <h1>Project Porfolio</h1>
 
-{% for project in projects %}
+{% for project in projects reversed %}
     
     <div class="card mb-3 container">
         <div class="card-body">

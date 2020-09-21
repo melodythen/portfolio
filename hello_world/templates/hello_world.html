@@ -13,11 +13,38 @@
           text-align: center;
           text-decoration: none;
           margin: 5px 2px;
+          color: black;
+
         }
         
         .fa:hover {
             opacity: 0.7;
         }
+        input[type=text], select, textarea, input[type=email] {
+        width: 300%;
+        padding: 12px 12px 12px;
+        margin: 12px 12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        resize:both;
+        font-size: 16px;
+      }
+      input[type=submit] {
+        background-color: #000000;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        float:right;
+        width: 30%;
+        margin-top: 40px;
+        margin-right:200 ;
+      }
+
+      input[type=submit]:hover {
+        background-color: #525252;
+      }
     
         </style>
 </head>
@@ -30,7 +57,7 @@
     <div class="navbar-nav">
         <a class="nav-link active" href="/projects">Projects <span class="sr-only">(current)</span></a>
         <a class="nav-link" href="/resume">Resume</a>
-        <a class="nav-link" href="/admin">Admin</a>
+       <!--  <a class="nav-link" href="/admin">Admin</a> -->
         
     </div>
 
@@ -47,39 +74,79 @@
 </nav>
 
 
+
 <div class="jumbotron">
     <h1 class="display-1">Hello, world!</h1>
-    <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+
     <hr class="my-4">
-    <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+    <p class="lead" style="text-indent: 80px; padding-top: 10px;line-height:50px;">
+      My name is Melody and I recently graduated from McGill University
+      and majored in Computer Science and Economics. These concentrations 
+      have allowed me to grow my interests in both technology and analytics.
+      My passion lies in software development and data science,
+      in which I demonstrate through academic and personal projects. 
+      I am currently refining my skills in data science by enhancing my python 
+      and analytical skills. As well, I am working on personal projects relating 
+      to technologies I encounter, such as automation and varying web frameworks
+      and databases. 
+
+    </p>
+    <hr class="my-4">
 
   </div>
 
   <div class="jumbotron">
     <h1 class="display-1">What I have been working on</h1>
-    <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+    <p class="lead">Visit the Project List to see what projects I have been working on!</p>
     <hr class="my-4">
-    <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+    <p>For the most up-to-date list of projects, please see my <a href="https://github.com/melodythen">GitHub</a> page</p>
     <a class="btn btn-secondary btn-lg" href="/projects" role="button">Project List</a>
   </div>
 
   <div class="jumbotron">
     <h1 class="display-1">Check out my resume</h1>
-    <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+    <p class="lead" style="text-indent: 50px;">I am currently looking for full time developer positions in Montreal.
+          If you are looking for a developer, please feel free to check out my resume, or email me for a chat!
+    </p>
     <hr class="my-4">
-    <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-    <a class="btn btn-primary btn-lg" href="/resume" role="button">resume</a>
+    <a class="btn btn-secondary btn-lg" href="/resume" role="button">Resume</a>
   </div>
 
 
   <div class="jumbotron jumbotron-fluid">
     <div class="container">
       <h1 class="display-4">Contact me</h1>
-      <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
-      <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
-      <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
-      <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
-    </div>
+
+
+
+          <div style="margin-top: 40px;" class="shadow-lg p-3 mb-5 bg-white rounded row no-gutters" data-aos="fade-up" >
+            <form style="margin-top:30px;" action="mailto:thenmelody@gmail.com" method="POST" enctype="text/plain" onsubmit="verification()">
+           
+              <div class="row align-items-center">
+                <div class="col-5"><h3>Name:</h3></div>
+                <div class="col-7"><input type='text' id='name', name='name' placeholder="Enter your name"></div>
+              </div>
+              <div class="row">
+                <div class="col-5"><h3>Email:</h3></div>
+                <div class="col-7"><input type='email' id='sender_email', name='sender_email'placeholder="Enter your email"></div>
+              </div>
+              <div class="row">
+                <div class="col-5"><h3>Subject:</h3></div>
+                <div class="col-7"><input type='text' id='subject', name='subject'placeholder="Enter the subject"></div>
+              </div>
+              <div class="row">
+                <div class="col-5" rows="1" ><h3>Message:</h3></div>
+                <div class="col-7"><textarea name="message" id="message" rows="5" placeholder="Enter your message ..."></textarea></div>
+              </div>
+              
+                
+              <input type="submit" value="submit" >
+                
+                
+           
+
+            </form>
+          </div>
   </div>
 
 {% endblock %}
